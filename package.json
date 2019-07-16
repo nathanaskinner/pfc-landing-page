@@ -1,0 +1,43 @@
+{
+  "name": "phase-boilerplate",
+  "version": "1.0.0",
+  "description": "Gulp boilerplate for Phase Family Center project",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanaskinner/phase.git"
+  },
+  "keywords": [
+    "gulp",
+    "boilerplate",
+    "html",
+    "css",
+    "javascript",
+    "phase"
+  ],
+  "author": "nathanskinner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanaskinner/phase/issues"
+  },
+  "homepage": "https://github.com/nathanaskinner/phase#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "del": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-cache": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {}
+}
