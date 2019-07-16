@@ -1,0 +1,100 @@
+.coupon {
+    border: 4px solid $red;
+    padding: $gap;
+    position: relative;
+    margin-top: $gap*3;
+
+    @include respond-above(xs) {
+        margin-top: 0;
+    }
+
+    @include respond-above(md) {
+        display: flex;
+        width: 100%;
+        padding: $gap 0;
+    }
+
+    &:after {
+        content: '';
+        height: 5rem;
+        width: 5rem;
+        background-color: $white;
+        position: absolute;
+        top: -2rem;
+        right: 2rem;
+        z-index: 1;
+    }
+
+    &__icon {
+        position: absolute;
+        top: -85px;
+        right: 1.125rem;
+        z-index: 2;
+
+        @include respond-above(sm) {
+            top: -130px;
+            right: 0;
+        }
+
+        .svg {
+            width: 90px;
+
+            @include respond-above(xs) {
+                width: 105px;
+            }
+
+
+            .cls-1 {
+                stroke: $yellow;
+                stroke-width: 2px;
+            }
+        }
+    }
+
+    &__header {
+        border-bottom: 1px solid $black;
+        margin-bottom: 1.5rem;
+        padding: 0 40% $gap 0;
+
+        @include respond-above(sm) {
+            padding: 0 $gap $gap 0;
+        }
+
+        @include respond-above(md) {
+            padding: $gap ($gap*2);
+            border-bottom: 0;
+            border-right: 1px solid $black;
+            flex: 1 1 0;
+            max-width: 400px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__content {
+        margin-bottom: 1.5rem;
+        padding: $gap 0 0 0;
+
+
+        @include respond-above(md) {
+            padding: $gap ($gap*2);
+            margin-bottom: 0;
+        }
+    }
+
+    .text {
+        margin-bottom: $gap;
+        font-size: $font-size-large;
+
+        @include respond-above(sm) {
+            padding-right: $gap;
+        }
+    }
+
+    .button {
+        width: 100%;
+
+        @include respond-above(sm) {
+            width: auto;
+        }
+    }
+}

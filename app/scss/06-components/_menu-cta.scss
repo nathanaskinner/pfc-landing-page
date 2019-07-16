@@ -1,0 +1,54 @@
+.menu-cta {
+
+    &__widget {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+
+        .textwidget {
+             p {
+                 display: none;
+
+                 @include respond-above(md) {
+                     display: block;
+                 }
+             }
+
+
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+
+        .category {
+            display: block;
+            color: $white;
+            margin-bottom: $gap;
+        }
+
+        .link {
+            color: $white;
+            margin-top: auto;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size: 1.75rem;
+        margin-bottom: $gutter;
+        overflow-wrap: break-word;
+        min-width: 1%;
+        width: 100%;
+        hyphens: auto;
+
+        @include respond-above(md) {
+            display: flex;
+            align-items: flex-end;
+            min-height: 80px;
+            font-size: $font-size-h2;
+        }
+    }
+}

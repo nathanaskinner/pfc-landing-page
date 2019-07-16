@@ -1,0 +1,129 @@
+.section {
+    position: relative;
+
+    margin-bottom: ($gap+$gutter);
+
+    @include respond-above(sm) {
+        margin-bottom: $gap*2;
+    }
+
+    @include respond-above(md) {
+        margin-bottom: ($gap*2)+$gutter;
+    }
+
+    @include respond-above(lg) {
+        margin-bottom: $gap*3;
+    }
+
+    &:only-child,
+    &:only-of-type {
+        margin-bottom: 0;
+    }
+
+    &--title + &--content {
+        margin-top: -($gutter);
+
+        @include respond-above(sm) {
+            margin-top: -($gap);
+        }
+
+        @include respond-above(md) {
+            margin-top: (-$gap+$gutter);
+        }
+
+        @include respond-above(lg) {
+            margin-top: -($gap*2);
+        }
+    }
+
+    &--padded {
+        padding: ($gap+$gutter) 0;
+
+        @include respond-above(sm) {
+            padding: ($gap*2) 0;
+        }
+
+        @include respond-above(md) {
+            padding: ($gap*2+$gutter) 0;
+        }
+
+        @include respond-above(lg) {
+            padding: ($gap*3) 0;
+        }
+    }
+
+    &--padded-top {
+        padding-top: $gap+$gutter;
+
+        @include respond-above(sm) {
+            padding-top: $gap*2;
+        }
+
+        @include respond-above(md) {
+            padding-top: $gap*2+$gutter;
+        }
+    }
+
+    &--flush {
+        margin-top: -($gap+$gutter);
+
+        @include respond-above(sm) {
+            margin-top: -($gap*2);
+        }
+
+        @include respond-above(md) {
+            margin-top: -($gap*2+$gutter);
+        }
+
+        @include respond-above(lg) {
+            margin-top: -($gap*3);
+        }
+    }
+
+    &--gray {
+        background-color: $gray-light;
+    }
+
+    &--half {
+        background-color: $gray-light;
+
+        @include respond-above(sm) {
+
+            background-color: $white;
+
+            &:after {
+                content: '';
+                background-color: $gray-light;
+                height: 50%;
+                max-height: 320px; 
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+    }
+
+    &--small {
+        padding: 2rem 0;
+
+        @include respond-above(md) {
+            padding: 3rem 0;
+        }
+    }
+
+    &--border {
+        border-top: 1px solid $gray;
+
+
+    }
+
+    &--mobile {
+        padding: 0;
+
+        @include respond-above(sm) {
+            padding: 3rem 0;
+        }
+    }
+}

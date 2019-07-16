@@ -1,0 +1,110 @@
+.popup {
+
+    $p: &;
+
+    display: none;
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+
+    &-open {
+        display: none;
+    }
+
+    &__modaal {
+
+        .modaal-container {
+            background-color: transparent;
+            max-width: 540px;
+            text-align: center;
+            box-shadow: none;
+        }
+    }
+
+    &__wrapper {
+        background-color: $red;
+        padding: $gutter;
+        border-radius: 8px;
+    }
+
+    &__inner {
+        background-color: $red;
+        padding: $gap;
+        border: 6px solid $black;
+        border-radius: 8px;
+        text-align: center;
+
+        @include respond-above(sm) {
+            padding: $gap ($gap*2);
+        }
+    }
+
+    &__border {
+        margin: $gap auto;
+        width: 75%;
+        border: 2px solid $black;
+    }
+
+    &__icon {
+        position: relative;
+        margin-bottom: -.5rem;
+        text-align: center;
+    }
+
+    &__content {
+        margin-bottom: $gap;
+    }
+
+    &__svg {
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+
+        .background {
+            fill: $red;
+        }
+    }
+
+    &--red {
+        #{$p}__wrapper,
+        #{$p}__inner {
+            background-color: $red;
+        }
+
+        #{$p}__svg {
+
+            .background {
+                fill: $red;
+            }
+        }
+    }
+
+    &--yellow {
+        #{$p}__wrapper,
+        #{$p}__inner {
+            background-color: $yellow;
+        }
+
+        #{$p}__svg {
+
+            .background {
+                fill: $yellow;
+            }
+        }
+    }
+
+    &--orange {
+        #{$p}__wrapper,
+        #{$p}__inner {
+            background-color: $orange;
+        }
+
+        #{$p}__svg {
+
+            .background {
+                fill: $orange;
+            }
+        }
+    }
+
+}

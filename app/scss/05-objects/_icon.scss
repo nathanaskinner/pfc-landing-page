@@ -1,0 +1,18 @@
+.icon {
+
+    margin: 0 auto;
+
+    &--large {
+        width: 160px;
+    }
+
+    &--xl {
+        min-width: 160px;
+        max-width: 300px;
+        margin: 0;
+
+        @include respond-above(sm) {
+            margin: 0 auto;
+        }
+    }
+}

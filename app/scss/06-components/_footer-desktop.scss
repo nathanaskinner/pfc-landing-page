@@ -1,0 +1,68 @@
+.desktop-footer {
+    display: none;
+    background-color: $gray-dark;
+
+    @include respond-above(sm) {
+        display: block;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    &__logo-link {
+        max-width: 200px;
+        display: block;
+    }
+
+    &__left {
+        text-align: right;
+        border-right: 1px solid $black;
+        padding: 2rem 0 2rem 1rem;
+
+        .footer__menu-item {
+            padding-right: 2rem;
+        }
+
+        @include respond-above(lg) {
+            padding: 3rem 0 3rem 1rem;
+        }
+    }
+
+    &__center {
+        padding: 2rem 1rem;
+
+        @include respond-above(lg) {
+            padding: 3rem 1rem;
+        }
+    }
+
+    &__right {
+        text-align: left;
+        border-left: 1px solid $black;
+        padding: 2rem 1rem 2rem 0;
+
+        .footer__menu-item {
+            padding-left: 2rem;
+        }
+
+        @include respond-above(lg) {
+            padding: 3rem 1rem 3rem 0;
+        }
+    }
+
+    &__copy {
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+
+    .footer__menu {
+        border-top: 0;
+    }
+
+}

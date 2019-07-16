@@ -1,0 +1,172 @@
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+
+	.reveal-modal-bg {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0;
+		}
+
+	.reveal-modal {
+		visibility: hidden;
+		top: 100px;
+		left: 50%;
+		margin-left: -300px;
+		width: 520px;
+		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+		position: absolute;
+		z-index: 101;
+		padding: 30px 40px 34px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		box-shadow: 0 0 10px rgba(0,0,0,.4);
+		height: 0;
+		width: 0;
+		overflow: hidden;
+		}
+
+	.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+	.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+	.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+	.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+
+	.reveal-modal .close-reveal-modal {
+		font-size: $font-size-base;
+		line-height: 1;
+		color: $black;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-decoration: none;
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: 700;
+		cursor: pointer;
+
+		@include respond-above(sm) {
+			color: $white;
+		}
+	}
+
+
+.reveal-modal {
+
+	&--team {
+		padding: 0;
+		width: 90%;
+		width: 0;
+		left: 0;
+		right: 0;
+		margin-left: 0;
+		margin: 0 auto;
+		top: 100px !important;
+		position: absolute;
+		border-radius: 0;
+
+		&.js-is-open {
+			height: auto;
+			width: 90%;
+			overflow: visible;
+
+			@include respond-above(md) {
+				width: 75%;
+			}
+		}
+
+
+		&:nth-child(3n-2) {
+	        border-top: 8px solid $blue;
+
+	        .reveal-modal__decor {
+	            background-image: url('../img/card-decor--blue.png');
+	        }
+	    }
+
+	    &:nth-child(3n-1) {
+	        border-top: 8px solid $yellow;
+
+	        .reveal-modal__decor {
+	            background-image: url('../img/card-decor--yellow.png');
+	        }
+	    }
+
+	    &:nth-child(3n) {
+	        border-top: 8px solid $red;
+
+	        .reveal-modal__decor {
+	            background-image: url('../img/card-decor--red.png');
+	        }
+	    }
+	}
+
+	&__decor {
+		padding-top: 5%;
+		background-size: contain;
+		background-repeat: repeat-x;
+		background-position: center;
+		background-color: $gray-light;
+	}
+
+	&__header {
+		display: flex;
+		width: 100%;
+		background-color: $white;
+	}
+
+	&__heading {
+		padding: $gap*2 $gap;
+
+
+		@include respond-above(sm) {
+			padding: $gap;
+			flex: 1 1 50%;
+			max-width: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	&__category {
+		font-weight: 700;
+		letter-spacing: 2px;
+		font-size: $font-size-large;
+		display: block;
+		margin-bottom: $gutter;
+		text-transform: uppercase;
+	}
+
+	&__title {
+
+	}
+
+	&__content {
+		font-size: $font-size-large;
+	}
+
+	&__img {
+		display: none;
+
+		@include respond-above(sm) {
+			display: block;
+			flex: 1 1 50%;
+			max-width: 50%;
+		}
+	}
+
+	&__caption {
+		font-size: $font-size-large;
+		letter-spacing: 2px;
+		text-decoration: underline;
+	}
+}

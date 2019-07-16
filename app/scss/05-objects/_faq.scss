@@ -1,0 +1,54 @@
+.faq {
+    &__title {
+        border-top: ($gutter/2) solid $green;
+        padding: $gap 0;
+        text-align: center;
+        margin: 0 auto;
+
+        @include respond-above(sm) {
+            width: 300px;
+            text-align: left;
+        }
+
+        .svg {
+            width: 100px;
+
+            @include respond-above(sm) {
+                width: 130px;
+            }
+        }
+
+        &--red {
+            border-color: $red;
+
+            .svg {
+
+                .cls-1 {
+                    stroke: $red;
+                }
+            }
+        }
+
+        &--yellow {
+            border-color: $yellow;
+
+            .svg {
+
+                .cls-1 {
+                    stroke: $yellow;
+                }
+            }
+        }
+
+        &--blue {
+            border-color: $blue;
+
+            .svg {
+
+                .cls-1 {
+                    stroke: $blue;
+                }
+            }
+        }
+    }
+}

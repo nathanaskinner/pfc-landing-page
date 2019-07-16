@@ -1,0 +1,21 @@
+blockquote {
+    font-size: $font-size-d2;
+    font-family: $serif;
+    line-height: 1.1;
+    text-align: center;
+    padding: 0 $gap;
+    margin: ($gap+$gutter) 0;
+}
+
+
+.pullquote {
+    border-left: 6px solid $yellow;
+    text-align: left;
+
+    @include respond-above(md) {
+        float: right;
+        width: 40%;
+        font-size: $font-size-h1;
+        margin-left: $gap;
+    }
+}

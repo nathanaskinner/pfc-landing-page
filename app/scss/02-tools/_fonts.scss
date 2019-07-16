@@ -1,0 +1,307 @@
+//
+//  Brandon Grotesque
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-MediumItalic.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-MediumItalic.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-MediumItalic.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-MediumItalic.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-MediumItalic.svg#BrandonGrotesque-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-BlackItalic.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-BlackItalic.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-BlackItalic.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-BlackItalic.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-BlackItalic.svg#BrandonGrotesque-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-RegularItalic.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-RegularItalic.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-RegularItalic.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-RegularItalic.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-RegularItalic.svg#BrandonGrotesque-RegularItalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-ThinItalic.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-ThinItalic.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-ThinItalic.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-ThinItalic.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-ThinItalic.svg#BrandonGrotesque-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-LightItalic.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-LightItalic.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-LightItalic.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-LightItalic.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-LightItalic.svg#BrandonGrotesque-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Regular.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Regular.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Regular.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Regular.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Light.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Light.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Light.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Light.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Light.svg#BrandonGrotesque-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Bold.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Bold.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Bold.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Bold.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Bold.svg#BrandonGrotesque-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Thin.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Thin.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Thin.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Thin.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Thin.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Thin.svg#BrandonGrotesque-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Black.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Black.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Black.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Black.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Black.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Black.svg#BrandonGrotesque-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-BoldItalic.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-BoldItalic.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-BoldItalic.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-BoldItalic.svg#BrandonGrotesque-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Medium.eot');
+    src: url('assets/fonts/brandon-grotesque/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Medium.woff2') format('woff2'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Medium.woff') format('woff'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Medium.ttf') format('truetype'),
+        url('assets/fonts/brandon-grotesque/BrandonGrotesque-Medium.svg#BrandonGrotesque-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+//
+//  Chronicle Display
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Bold.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Bold.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Bold.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Bold.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Bold.svg#ChronicleDisplay-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Semi.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Semi.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Semi.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Semi.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Semi.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Semi.svg#ChronicleDisplay-Semi') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Light.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Light.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Light.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Light.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Light.svg#ChronicleDisplay-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-XLight.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-XLight.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-XLight.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-XLight.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-XLight.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-XLight.svg#ChronicleDisplay-XLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Italic.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Italic.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Italic.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Italic.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Italic.svg#ChronicleDisplay-Italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-LightItalic.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-LightItalic.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-LightItalic.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-LightItalic.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-LightItalic.svg#ChronicleDisplay-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Black.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Black.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Black.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Black.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Black.svg#ChronicleDisplay-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-SemiItalic.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-SemiItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-SemiItalic.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-SemiItalic.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-SemiItalic.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-SemiItalic.svg#ChronicleDisplay-SemiItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-BoldItalic.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-BoldItalic.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-BoldItalic.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-BoldItalic.svg#ChronicleDisplay-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-BlackItalic.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-BlackItalic.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-BlackItalic.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-BlackItalic.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-BlackItalic.svg#ChronicleDisplay-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-XLightItalic.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-XLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-XLightItalic.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-XLightItalic.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-XLightItalic.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-XLightItalic.svg#ChronicleDisplay-XLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Roman.eot');
+    src: url('assets/fonts/chronicle-display/ChronicleDisplay-Roman.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Roman.woff2') format('woff2'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Roman.woff') format('woff'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Roman.ttf') format('truetype'),
+        url('assets/fonts/chronicle-display/ChronicleDisplay-Roman.svg#ChronicleDisplay-Roman') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Socicon';
+  src:  url('assets/fonts/socicon/Socicon.eot?6abp0d');
+  src:  url('assets/fonts/socicon/Socicon.eot?6abp0d#iefix') format('embedded-opentype'),
+    url('assets/fonts/socicon/Socicon.woff2?6abp0d') format('woff2'),
+    url('assets/fonts/socicon/Socicon.ttf?6abp0d') format('truetype'),
+    url('assets/fonts/socicon/Socicon.woff?6abp0d') format('woff'),
+    url('assets/fonts/socicon/Socicon.svg?6abp0d#Socicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

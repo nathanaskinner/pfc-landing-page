@@ -1,0 +1,27 @@
+.svg {
+    height: auto;
+
+    .cls-1 {
+        stroke: $black;
+    }
+
+    &--squiggle {
+        width: 220px;
+
+        .cls-1 {
+            stroke-width: 8px;
+        }
+    }
+
+    &--red {
+        .cls-1 {
+            stroke: $red;
+        }
+    }
+
+    &--yellow {
+        .cls-1 {
+            stroke: $yellow;
+        }
+    }
+}

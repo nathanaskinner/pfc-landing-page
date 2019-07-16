@@ -1,0 +1,36 @@
+body {
+    font-family: $sans-serif;
+    opacity: 0;
+    overflow-x: hidden;
+}
+p {
+    margin-bottom: $gap;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+input {
+    border: 0;
+    padding: $gutter;
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-bottom: 2px solid $gray;
+    margin-bottom: $gap;
+    font-size: .8125rem;
+}
+
+label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+textarea {
+    background-color: transparent;
+    border: 2px solid $gray;
+    padding: $gutter;
+}

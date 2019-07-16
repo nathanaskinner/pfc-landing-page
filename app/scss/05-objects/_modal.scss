@@ -1,0 +1,108 @@
+.modal {
+
+    $m: &;
+
+    position: relative;
+    border-top: .5rem solid $gray-dark;
+
+    &--blue {
+        border-color: $blue;
+
+        #{$m}__decor {
+            background-image: url('../img/card-decor--blue.png');
+        }
+    }
+
+    &--red {
+        border-color: $red;
+
+        #{$m}__decor {
+            background-image: url('../img/card-decor--red.png');
+        }
+    }
+
+    &--yellow {
+        border-color: $yellow;
+
+        #{$m}__decor {
+            background-image: url('../img/card-decor--yellow.png');
+        }
+    }
+
+    &--orange {
+        border-color: $orange;
+
+        &:after {
+            background-image: url('../img/banner-pattern.png');
+        }
+    }
+
+    &__header {
+        @include respond-above(sm) {
+            display: flex;
+        }
+    }
+
+    &__heading,
+    &__img {
+
+        @include respond-above(sm) {
+            flex: 0 1 50%;
+            max-width: 50%;
+        }
+    }
+
+    &__heading {
+        padding: $gap;
+
+        @include respond-above(sm) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 8%;
+        }
+
+        @include respond-above(md) {
+            padding: $gap 8%;
+        }
+    }
+
+    &__content {
+        padding: 3rem 0;
+
+        background-color: $gray-light;
+    }
+
+    &__decor {
+        padding-top: 8%;
+        background-size: contain;
+        background-repeat: repeat-x;
+        background-position: left;
+        background-color: $gray-light;
+    }
+
+    .modaal-close {
+        position: absolute;
+        top: $gutter;
+        right: $gap;
+        color: $black;
+        text-decoration: none;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        display: inline-block;
+        width: auto;
+
+        &:after {
+            content: 'X';
+            margin-left: .25rem;
+        }
+
+        @include respond-above(sm) {
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.form {
+
+    $form: &;
+
+    &--marketing {
+        position: relative;
+
+        .nf-field-container {
+            margin: 0;
+            margin-bottom: 0;
+        }
+
+        #{$form}__input {
+            width: 100%;
+            display: block;
+
+            input[type="email"] {
+                padding: 1rem 3rem 1rem 0;
+                border: 0;
+                border-bottom: 2px solid $gray-light;
+                font-size: 1.125rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: $gray-light;
+            }
+        }
+
+        #{$form}__submit {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+
+            input[type="button"] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                border: 0;
+                border-radius: 0;
+                background-color: transparent;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: $black;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.nf-field-container {
+    
+}

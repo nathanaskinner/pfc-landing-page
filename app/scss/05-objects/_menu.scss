@@ -1,0 +1,57 @@
+.menu {
+
+     $menu: &;
+
+    &--horizontal {
+
+        @include respond-above(sm) {
+            display: flex;
+        }
+    }
+
+    &--utility {
+        border-left: 1px solid $black;
+        padding-left: $gutter;
+    }
+
+
+    &__items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &--footer {
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700; 
+
+            #{$menu}__item {
+                border-bottom: 1px solid $black;
+            }
+
+            #{$menu}__link {
+                color: $white;
+                padding: $gap $gutter;
+
+                @include respond-above(md) {
+                    padding: $gap;
+                }
+            }
+        }
+    }
+
+    &__item {
+        flex: 1 1 0;
+        margin-bottom: $gutter;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+    }
+}

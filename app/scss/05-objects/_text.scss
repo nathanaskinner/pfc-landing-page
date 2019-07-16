@@ -1,0 +1,26 @@
+.text {
+
+    &--med {
+        font-size: 1.25rem; 
+    }
+
+    &--large {
+        font-size: $font-size-large;
+    }
+
+    &--center {
+        text-align: center;
+
+        &-m {
+            text-align: center;
+            @include respond-above(sm) {
+                text-align: left;
+            }
+
+        }
+    }
+
+    &--xl {
+        font-size: $font-size-h2; 
+    }
+}

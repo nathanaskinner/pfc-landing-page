@@ -1,0 +1,35 @@
+.link {
+
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    appearance: none;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    font-weight: 700;
+    position: relative;
+    color: $black;
+    text-decoration: none;
+    display: inline-block;
+
+
+    &--arrow {
+        &:after {
+            content: '\003e';
+            transition: transform 0.3s ease-out;
+            padding-left: .5rem;
+            font-size: 1.25rem;
+            display: inline-block;
+        }
+
+        &:hover,
+        &:focus {
+
+            &:after {
+
+                transform: translateX(.5rem);
+
+            }
+        }
+    }
+}

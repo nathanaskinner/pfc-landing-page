@@ -1,0 +1,42 @@
+.logo {
+
+    $logo: &;
+
+    &__link {
+        display: inline-block;
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+        border: 0;
+    }
+
+    &--name {
+        width: 240px;
+        #{$logo}__link {
+            max-width: none;
+            width: 100%; 
+        }
+    }
+
+    &--footer {
+        position: absolute;
+        top: -94px;
+        left: 0;
+        right: 0;
+
+        @include respond-above(sm) {
+            position: relative;
+            top: initial;
+            left: initial;
+            right: initial;
+        }
+    }
+}
+
+.custom-logo-link {
+    display: inline-block;
+}

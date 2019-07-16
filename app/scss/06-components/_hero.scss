@@ -1,0 +1,100 @@
+.hero {
+    height: 70vh;
+    max-height: 800px;
+    background-color: $neutral;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &:before,
+    &:after {
+            content: '';
+            position: absolute;
+            bottom: 0rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-height: 50px;
+            height: 10%; 
+            max-height: 100px;
+            width: 25%;
+            max-width: 460px;
+            min-width: 220px;
+        }
+
+        &:before {
+            left: 0;
+            background-image: url('assets/images/pattern-left.png');
+            background-position: left center;
+        }
+
+        &:after {
+            right: 0;
+            background-image: url('assets/images/pattern-right.png');
+            background-position: right center;
+        }
+
+    @include respond-above(sm) {
+        height: 80vh;
+    }
+
+    &--border {
+        border-bottom: 12px solid #ff6a63;
+
+        &:after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding-top: 6%;
+            z-index: 2;
+            background-image: url(assets/images/banner-pattern.png);
+            background-repeat: repeat-x;
+            background-position: 0;
+            background-size: contain;
+        }
+    }
+
+    &__shim {
+
+        &:before {
+            content: '';
+            background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__heading {
+
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 9%; 
+        padding: $gutter;
+        text-align: center; 
+
+        @include respond-above(sm) {
+            min-width: 320px;
+            padding: $gap;
+        }
+
+    }
+
+    &__icon {
+        width: 100%;
+        border: 0;
+        margin: 0;
+    }
+}

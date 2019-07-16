@@ -1,0 +1,125 @@
+.accordion {
+
+	$a: &;
+
+	&__panel {
+		border-bottom: 1px solid $black;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 2px;
+		cursor: pointer;
+		position: relative;
+		text-align: left;
+
+		&.js-is-active {
+
+			.accordion__x__inner {
+				transform: rotate(45deg);
+				transition: all 100ms ease-in-out;
+			}
+		}
+	}
+
+	&__x {
+		position: absolute;
+		display: block;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 1rem;
+
+		&__inner {
+			font-size: $font-size-large;
+			position: relative;
+			display: block;
+			transition: all 100ms ease-in-out;
+		}
+	}
+
+	&__toggle {
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 2px;
+		line-height: 1.6;
+		border: 0;
+		padding: $gutter;
+		appearance: none;
+		display: block;
+		cursor: pointer;
+		position: relative;
+		width: 100%;
+		text-align: left;
+		background-color: transparent;
+	}
+
+	&__content {
+		padding: $gutter;
+		line-height: 1.6;
+	}
+
+	&__body {
+		max-height: 0;
+		overflow: hidden;
+		box-sizing: border-box;
+
+		&.js-is-open {
+			max-height: none;
+			overflow: auto;
+		}
+
+	}
+
+	&--white {
+
+		#{$a}__panel {
+			border-bottom: 1px solid $white;
+		}
+
+	}
+
+	&--large {
+		#{$a}__title {
+			font-size: 1.25rem;
+
+		}
+	}
+
+	&-section {
+
+		transition: all 500ms ease-in-out;
+
+		color: $white;
+		background-size: 200px;
+		background-repeat: repeat-y;
+		background-position: -$gap;
+
+		&--orange {
+			background-color: $orange;
+			background-image: url("../img/left-pattern-003.png");
+		}
+
+		&--dark-orange {
+			background-color: $orange-dark;
+			background-image: url("../img/left-pattern-001.png");
+		}
+
+		&--yellow {
+			background-color: $yellow;
+			background-image: url("../img/left-pattern-002.png");
+		}
+
+		& + & {
+			margin-top: $gutter;
+		}
+	}
+
+	&__heading {
+
+		@include respond-above(sm) {
+            width: 280px;
+            text-align: left;
+        }
+	}
+}

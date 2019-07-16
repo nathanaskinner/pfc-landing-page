@@ -1,0 +1,47 @@
+.list {
+
+    &--large {
+        font-size: $font-size-large;
+        line-height: 1.6;
+
+        @include respond-above(sm) {
+            font-size: 1.125rem;
+        }
+
+        @include respond-above(md) {
+            font-size: $font-size-large;
+        }
+
+        @include respond-above(lg) {
+            font-size: 1.75rem;
+        }
+    }
+
+    &--two-col {
+
+        @include respond-above(sm) {
+            columns: 2 auto;
+            column-gap: $gap*2;
+        }
+    }
+
+    &__item {
+        padding-left: $gap;
+        margin-bottom: $gutter;
+
+        @include respond-above(md) {
+            margin-bottom: $gap;
+        }
+
+        &:before {
+            content: '\2022';
+            font-family: $sans-serif;
+            font-size: $font-size-large;
+            color: $black;
+            line-height: inherit;
+            display: inline-block;
+            margin-left: -$gap;
+            width: $gap;
+        }
+    }
+}

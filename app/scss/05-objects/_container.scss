@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 0 1.125rem;
+
+    @include respond-above(sm) {
+        width: 84%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &--flush {
+        padding: 0;
+    }
+
+    &--small {
+        @include respond-above(sm) {
+            width: 75%;
+            max-width: 992px;
+        }
+    }
+
+    &--expanded {
+        @include respond-above(sm) {
+            width: 90%;
+            max-width: 1340px;
+        }
+    }
+
+    &--footer {
+
+        padding: 0;
+
+        @include respond-above(sm) {
+            max-width: none;
+        }
+
+        @include respond-above(md) {
+            max-width: 84%;
+            margin: 0 auto;
+        }
+    }
+}

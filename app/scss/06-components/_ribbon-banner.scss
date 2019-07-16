@@ -1,0 +1,91 @@
+.ribbon-banner {
+    text-align: center;
+    padding: $gutter;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    position: relative;
+    display: none;
+
+    @include respond-above(sm) {
+        display: block; 
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 25%;
+            max-width: 460px;
+            min-width: 220px;
+        }
+
+        &:before {
+            left: 0;
+            background-image: url('../img/pattern-left.png');
+            background-position: left center;
+        }
+
+        &:after {
+            right: 0;
+            background-image: url('../img/pattern-right.png');
+            background-position: right center;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: $gap;
+        z-index: 2;
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        color: $white;
+
+        &:before {
+            content: 'X';
+            margin-right: .25rem;
+        }
+    }
+
+    &--red {
+        background-color: $red;
+        color: $white;
+    }
+
+    &--yellow {
+        background-color: $yellow;
+        color: $black;
+    }
+
+    &--blue {
+        background-color: $blue;
+        color: $white;
+    }
+
+    &--green {
+        background-color: $green;
+        color: $black;
+    }
+
+    &__link {
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        display: inline-block;
+        color: inherit;
+
+        &:visited {
+            color: inherit;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.mb {
+
+    &-0 {
+        margin-bottom: 0;
+    }
+
+    &-1 {
+        margin-bottom: $gutter;
+    }
+
+    &-2 {
+        margin-bottom: $gap;
+    }
+
+    &-3 {
+        margin-bottom: $gap+$gutter;
+    }
+
+    &-4 {
+        margin-bottom: $gap*2;
+    }
+
+    &-5 {
+        margin-bottom:($gap*2)+$gutter;
+    }
+
+    &-6 {
+        margin-bottom: $gap*3;
+    }
+
+    &-0 {
+        margin-bottom: 0;
+    }
+}

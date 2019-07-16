@@ -1,0 +1,18 @@
+.page-header {
+
+    position: relative;
+    padding: 3rem 0;
+
+    @include respond-above(sm) {
+        padding: 4rem 0;
+    }
+
+    &--gray {
+        background-color: $gray-light;
+    }
+
+    &--overlap {
+        padding-bottom: 10rem;
+    }
+
+}

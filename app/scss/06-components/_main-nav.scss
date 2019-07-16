@@ -1,0 +1,89 @@
+.main-nav {
+    &__item {
+        position: relative;
+        font-size: $font-size-base;
+        border-bottom: 1px solid $black;
+        margin-right: -$gutter;
+
+        .toggle {
+            position: absolute;
+            top: 0;
+            right: $gap;
+            cursor: pointer;
+            border: 0;
+            background-color: transparent;
+            appearance: none;
+
+            &.js-is-open {
+                .toggle__box {
+                    &:before {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            color: $white;
+
+            &__box {
+                position: relative;
+                padding: .75rem 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:before {
+                    content: '+';
+                    color: $black;
+                    font-weight: 700;
+                    font-size: $font-size-large;
+                    line-height: 100%;
+                    transform: rotate(0deg);
+                    transition: all 250ms ease-in-out;
+                }
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: $gutter $gap;
+        padding-right: 3rem;
+        color: $black;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    &__sub-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 500ms ease-out;
+        padding: 0 $gutter;
+
+        &__link {
+            color: $black;
+            text-decoration: none;
+            display: block;
+        }
+
+        &.js-is-open {
+            max-height: 500px;
+            overflow: visible;
+            transition: max-height 500ms ease-in;
+
+            .main-nav__sub-menu__item {
+                opacity: 1;
+            }
+        }
+
+        &__item {
+            transition: all 0.4s ease-out;
+            opacity: 0;
+            padding: ($gutter/2) $gutter;
+
+            &:last-child {
+                margin-bottom: $gutter;
+            }
+        }
+    }
+}

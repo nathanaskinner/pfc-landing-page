@@ -1,0 +1,59 @@
+//
+//  TYPOGRAPHY
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$font-size-base: 1rem;
+$font-size-sm: 87.5%;
+$font-size-large: 1.5rem;
+
+$font-size-d1: $font-size-base * 4;
+$font-size-d2: $font-size-base * 3;
+
+$font-size-h1: $font-size-base * 2.5;
+$font-size-h2: $font-size-base * 2;
+$font-size-h3: $font-size-base * 1.5;
+$font-size-h4: $font-size-base * 1.25;
+$font-size-h5: $font-size-base * 1;
+$font-size-h6: $font-size-base * .8125;
+
+$line-height-base: 1.6;
+
+$sans-serif: 'Brandon Grotesque', Helvetica, Arial, sans-serif;
+$serif: 'Chronicle Display', Georgia, Times, 'Times New Roman', serif;
+
+//
+//  MEDIA QUERIES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// A map of breakpoints.
+$breakpoints: (
+    xs: 576px,
+    sm: 768px,
+    md: 992px,
+    lg: 1200px,
+    xl: 1380px,
+);
+
+//
+//  COLORS
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$white: #fff;
+$red: #FF6A63;
+$blue: #475A75;
+$orange: #ff974f;
+$orange-dark: #F77A52;
+$yellow: #FCB858;
+$green: #BFD730;
+$black: #000000;
+$neutral: #A49A87;
+$gray: #E5E5E5;
+$gray-light: #F1F1F1;
+$gray-dark: #525252;
+
+//
+//  GRID
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$gap : 2rem; // space between columnd
+$gutter : $gap / 2;

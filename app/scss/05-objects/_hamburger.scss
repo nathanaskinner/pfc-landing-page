@@ -1,0 +1,61 @@
+.hamburger {
+    display: inline-block;
+    overflow: visible;
+    margin: 0;
+    padding: 1rem;
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: .15s;
+    transition-property: opacity,filter;
+    text-transform: none;
+    color: inherit;
+    border: 0;
+    background-color: transparent;
+    appearance: none;
+
+    &__box {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 24px;
+    }
+
+    &__inner {
+    top: 50%;
+    display: block;
+    margin-top: -2px;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #fff;
+
+        &:before,
+        &:after {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 4px;
+            transition-timing-function: ease;
+            transition-duration: .15s;
+            transition-property: transform;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        &:before {
+            top: -10px;
+            transition-timing-function: ease;
+            transition-duration: .15s;
+            transition-property: transform,opacity;
+        }
+
+        &:after {
+            bottom: -10px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.intro {
+    padding: 0 2rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 6rem; 
+
+    @include respond-above(xs) {
+        width: 80%;
+    }
+
+    &__heading {
+        font-size: 2.25rem;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 3rem;
+
+        @include respond-above(md) {
+            font-size: 3rem;
+        }
+
+        @include respond-above(lg) {
+            font-size: 4rem;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -2rem;
+            left: 0;
+            right: 0;
+            display: block;
+            background-image: url('assets/images/squiggle.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 120px;
+            height: 1.25rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        margin: 0;
+
+        @include respond-above(md) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .title {
+        max-width: 780px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,33 @@
+.home-subnav {
+
+    &__cta {
+        font-family: $sans-serif;
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        justify-content: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        color: $white;
+
+        &--red {
+            background-color: $red;
+        }
+
+        &--blue {
+            background-color: $blue;
+        }
+
+        &--yellow {
+            background-color: $yellow;
+        }
+    }
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+    }
+}

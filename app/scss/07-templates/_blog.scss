@@ -1,0 +1,17 @@
+.blog {
+    p {
+        margin-bottom: $gap+$gutter;
+    }
+
+    .full-width {
+        margin-bottom: $gap+$gutter;
+    }
+
+    blockquote {
+        margin-bottom: $gap+$gutter;
+    }
+
+    &-single {
+        padding-top: $gap*2;
+    }
+}

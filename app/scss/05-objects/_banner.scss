@@ -1,0 +1,68 @@
+.banner {
+    width: 100%;
+    position: relative;
+    border-bottom: 12px solid $green;
+
+    &:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 8%;
+        z-index: 2;
+        background-image: url('assets/images/banner-pattern.png');
+        background-repeat: repeat-x;
+        background-position: left;
+        background-size: contain;
+    }
+
+    &--green {
+        border-color: $green;
+
+        &:after {
+            background-image: url('../img/banner-pattern.png');
+        }
+    }
+
+    &--red {
+        border-color: $red;
+
+        &:after {
+            background-image: url('../img/banner-pattern.png');
+        }
+    }
+
+    &--yellow {
+        border-color: $yellow;
+
+        &:after {
+            background-image: url('../img/banner-pattern.png');
+        }
+    }
+
+    &--orange {
+        border-color: $orange;
+
+        &:after {
+            background-image: url('../img/banner-pattern.png');
+        }
+    }
+
+    &--blue {
+        border-color: $yellow;
+
+        &:after {
+            background-image: url('../img/banner-pattern.png');
+        }
+    }
+
+    &__img {
+        margin: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

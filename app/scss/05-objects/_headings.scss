@@ -1,0 +1,70 @@
+.heading {
+
+    font-weight: 600;
+    display: block;
+
+    &--1 {
+        font-size: 2.5rem;
+    }
+
+    &--2 {
+        font-size: 2rem;
+    }
+
+    &--3 {
+        font-size: 1.5rem;
+    }
+
+    &--4 {
+        font-size: 1.25rem;
+    }
+
+    &--5 {
+        font-size: 1rem;
+    }
+
+    &--6 {
+        font-size: .8125rem;
+    }
+
+    &--serif {
+        font-family: $serif;
+    }
+
+    &--sans {
+        font-family: $sans-serif;
+    }
+
+    &--caps {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+
+.preheading {
+    display: block;
+    font-family: $sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: $font-size-large;
+    margin-bottom: $gutter;
+
+    &--yellow {
+        color: $yellow;
+    }
+}
+
+.display {
+    font-weight: 600;
+    font-family: $serif;
+    line-height: 1.2;
+
+    &--1 {
+        font-size: 4rem;
+    }
+
+    &--2 {
+        font-size: 3rem;
+    }
+}

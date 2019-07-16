@@ -1,0 +1,59 @@
+.sbs {
+
+    padding: $gap $gutter;
+
+    @include respond-above(sm) {
+        padding: 0;
+    }
+
+    $sbs: &;
+
+    &--overlap {
+
+        @include respond-above(md) {
+            margin-bottom: ($gap*5);
+        }
+
+    }
+
+    &--border {
+        border: 4px solid $red;
+        border-image: linear-gradient(45deg, rgba(255,106,99,1) 0%, rgba(255,151,79,1) 35%, rgba(252,184,88,1) 100%);
+        border-image-slice: 1;
+
+        @include respond-above(md) {
+            padding: $gap*2;
+        }
+
+        #{$sbs}__img {
+            margin-top: -($gap*4);
+        }
+    }
+
+    &__img {
+        position: relative;
+        margin-top: -($gap*2);
+        margin-bottom: $gap;
+        display: block; 
+        
+
+        @include respond-above(md) {
+            margin-bottom: $gap*2;
+        }
+    }
+
+    &__title {
+        display: block;
+        text-transform: capitalize;
+        margin-bottom: $gap;
+        line-height: 1.2;
+
+        @include respond-above(md) {
+            width: 75%;
+        }
+    }
+
+    &__text {
+        font-size: $font-size-large;
+    }
+}
