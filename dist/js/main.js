@@ -1,9 +1,19 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         setTimeout(AOS.refreshHard, 150);
     });
-    
+
+    $(window).on('load', function () {
+        AOS.refresh();
+    });
+
+    $(window).on('load', function () {
+        $('.animate-svg').each(function (i, el) {
+            vsvgInitElement(el);
+        })
+    })
+
     AOS.init({
         disable: 'phone',
         duration: 1000,
@@ -13,9 +23,7 @@ jQuery(document).ready(function($) {
         startEvent: 'load',
     });
 
-    $(window).on('load', function() {
-        AOS.refresh();
-    });
+
 
     function vsvgInitElement(el) {
         var $el = $(el);
@@ -23,17 +31,4 @@ jQuery(document).ready(function($) {
             duration: 100
         });
     }
-
-    $(window).on('load',function() {
-        $('.animate-svg').each(function(i, el) {
-            vsvgInitElement(el);
-        })
-    })
-
-    $(window).on('load', function() {
-        $("body").animate({
-            opacity: 1
-        }, 1000);
-    });
-
 });
