@@ -16,24 +16,15 @@
 
     &--name {
         width: 240px;
+
         #{$logo}__link {
             max-width: none;
-            width: 100%; 
+            width: 100%;
         }
     }
 
     &--footer {
-        position: absolute;
-        top: -94px;
-        left: 0;
-        right: 0;
-
-        @include respond-above(sm) {
-            position: relative;
-            top: initial;
-            left: initial;
-            right: initial;
-        }
+        margin-bottom: $gap;
     }
 }
 

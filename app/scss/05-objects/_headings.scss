@@ -3,6 +3,11 @@
     font-weight: 600;
     display: block;
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
     &--1 {
         font-size: 2.5rem;
     }

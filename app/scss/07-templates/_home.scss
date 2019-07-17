@@ -5,28 +5,36 @@
     }
 
     .hero {
-        padding-top: 3rem; 
+        padding-top: 3rem;
 
         &__heading {
 
-            margin: 5% auto 0;
+            margin: 6% auto 0;
 
             .heading {
-                font-size: 2.5rem; 
+                font-size: 2.5rem;
 
                 @include respond-above(sm) {
+                    font-size: 3rem;
+                }
+
+                @include respond-above(md) {
                     font-size: 4rem;
                 }
             }
 
             .preheading {
-                font-size: 1.125rem; 
+                font-size: 1.125rem;
 
                 @include respond-above(sm) {
-                    font-size: 1.5rem; 
+                    font-size: 1.25rem;
+                }
+
+                @include respond-above(md) {
+                    font-size: 1.5rem;
                 }
             }
-            
+
         }
     }
 
@@ -35,7 +43,7 @@
         position: absolute;
         background-color: transparent;
         left: 0;
-        top: 0; 
+        top: 0;
         width: 100%;
         z-index: 2;
     }
